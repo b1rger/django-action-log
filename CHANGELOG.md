@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.3](https://github.com/b1rger/django-action-logger/compare/v0.1.2...v0.1.3) (2024-02-19)
+
+
+### Bug Fixes
+
+* rename templates and templatetag to `django_action_logGER` ([ee722f2](https://github.com/b1rger/django-action-logger/commit/ee722f204dc771fa13852de113fe10bdf84186d0))
+* use pre_delete signal instead of post_delete ([d24b618](https://github.com/b1rger/django-action-logger/commit/d24b618ea55bc865988cdaf717a9334f95ccd5f3))
+
 ## [0.1.2](https://github.com/b1rger/django-action-logger/compare/v0.1.1...v0.1.2) (2024-02-19)
 
 
