@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "django-action-log"
+name = "django-action-logger"
 version = "0.1.0"
 description = "Create a log of Django actions"
 authors = ["Birger Schacht <birger.schacht@oeaw.ac.at>"]
