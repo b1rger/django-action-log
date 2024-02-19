@@ -1,4 +1,4 @@
-{% load django_action_log %}
+{% load django_action_logger %}
 {% regroup object_list by action_time|date as object_by_date %}
 {% for logentry_date in object_by_date %}
     <h1 class="text-center logentry-date">{{ logentry_date.grouper }}</h1>
