@@ -1,4 +1,4 @@
-from django.db.models.signals import post_save, post_delete
+from django.db.models.signals import post_save, pre_delete
 from django.dispatch import receiver
 from crum import get_current_request
 
@@ -21,7 +21,7 @@ def log_save(sender, instance, created, raw, using, update_fields, **kwargs):
         DjangoActionLogEntry.objects.change_something(user, instance, update_fields)
 
 
-@receiver(post_delete)
+@receiver(pre_delete)
 def log_delete(sender, instance, using, origin, **kwargs):
     if sender is DjangoActionLogEntry:
         return
