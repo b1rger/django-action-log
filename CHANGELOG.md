@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.4](https://github.com/b1rger/django-action-logger/compare/v0.1.3...v0.1.4) (2024-02-21)
+
+
+### Bug Fixes
+
+* add pagination to logentry list view ([23835ab](https://github.com/b1rger/django-action-logger/commit/23835abb3fc6ed577b9095eb5646975f7692e0a8))
+* when writing the log, store model instead of name ([964402b](https://github.com/b1rger/django-action-logger/commit/964402b46ab74866be664eadbc05a7ba87b3f51a))
+
 ## [0.1.3](https://github.com/b1rger/django-action-logger/compare/v0.1.2...v0.1.3) (2024-02-19)
 
 
