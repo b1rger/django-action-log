@@ -12,7 +12,7 @@ class DjangoActionLogEntryManager(models.Manager):
         if obj:
             content_type = ContentType.objects.get_for_model(obj)
             entry.content_type = content_type
-            natural_key = f"{content_type.app_label}.{content_type.name}"
+            natural_key = f"{content_type.app_label}.{content_type.model}"
             metadata["natural_key"] = natural_key
             message += f" {natural_key}: {obj}"
             metadata["pk"] = obj.pk
