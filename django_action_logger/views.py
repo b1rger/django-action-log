@@ -6,6 +6,7 @@ from .models import DjangoActionLogEntry
 
 class Log(ListView):
     model = DjangoActionLogEntry
+    paginate_by = 100
 
     def get_queryset(self, *args, **kwargs):
         queryset = super().get_queryset(*args, **kwargs)
