@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/b1rger/django-action-logger/compare/v0.1.4...v0.1.5) (2024-03-01)
+
+
+### Bug Fixes
+
+* do not log migrations ([ed73467](https://github.com/b1rger/django-action-logger/commit/ed73467cb5fe0517af13f52a2debf801e2377a52))
+
 ## [0.1.4](https://github.com/b1rger/django-action-logger/compare/v0.1.3...v0.1.4) (2024-02-21)
 
 
