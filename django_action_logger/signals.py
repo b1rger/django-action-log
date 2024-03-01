@@ -9,6 +9,10 @@ from .models import DjangoActionLogEntry
 def log_save(sender, instance, created, raw, using, update_fields, **kwargs):
     if sender is DjangoActionLogEntry:
         return
+    # we do not want to log migrations, because we need migrations
+    # to be finished before we an even start to write data to the db
+    if type(instance).__name__ == "Migration":
+        return
     user = None
     request = get_current_request()
     if request:
