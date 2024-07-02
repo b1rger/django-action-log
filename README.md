@@ -1,1 +1,1 @@
-Provide a simple action log for Django applications
+Project has been archived. Use [django-auditlog](https://django-auditlog.readthedocs.io/) instead.
